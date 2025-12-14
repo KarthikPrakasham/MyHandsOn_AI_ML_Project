@@ -7,3 +7,5 @@
 /.idea/vcs.xml
 /.idea/
 /.venv/
+.DS_Store
+anaconda_projects/db/project_filebrowser.db
