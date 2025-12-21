@@ -28,7 +28,7 @@ def read_root():
 
 @app.post("/predict")
 def predict(data: Input) -> Output:
-    model = joblib.load('jobchg_pipeline_model.pkl')
+    model = joblib.load('janatahack_model.pkl')
 
     X_input = pd.DataFrame([[data.city,data.city_development_index,data.gender,data.relevent_experience,data.enrolled_university,data.education_level,
                              data.major_discipline,data.experience,data.company_size,data.company_type,data.last_new_job,data.training_hours]])
