@@ -6,6 +6,6 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8502
+EXPOSE 8080
 
-ENTRYPOINT ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8502"]
+ENTRYPOINT ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
